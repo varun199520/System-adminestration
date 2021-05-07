@@ -1,0 +1,23 @@
+Basic Linux Commands
+
+ls -l :  shows all the links with the link column shows number of links.
+cat   : To display content of the given file
+cp -r : To copy all files recursively.
+mv    :To rename the file 
+rm    :To remove file
+uname :To check current version of Linux.
+head  :To get info about top files instead of all files.
+tail  :To get info about last files instead of all files.
+ping  :To check  working of network
+vi    :Text editor ,press i to insert then press ESC to return & wq to save and exit .
+mkdir :	Make a directory at a particular path
+rmdir - used to remove an empty directory  
+touch file : to create file
+~     : Indicates the home directory.
+echo  :It inserts text in the given file
+clear : Clears information on the display screen to provide a blank slate.
+pwd   :	Print your working directory
+ls    :	List the contents of a particular path
+cd    :	 Move to a particular path or change directory
+cd ~  :  Return to home directory.
+cd / :To shift to root user 

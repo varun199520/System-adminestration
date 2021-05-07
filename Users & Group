@@ -1,0 +1,45 @@
+1.Users:
+-Users are accounts ,used to login into a system. 
+-Each user identified with unique identification number.
+-The information of users in a system are stored in /etc/passwd file. 
+-The hashed passwords for users are stored in /etc/shadow file.
+
+
+2.Group is a collection of specific users
+    1.Primary Group-
+       - it is the default group that user belongs to
+       - this is generally stored in /etc/passwd file
+    2.Secondary Group-
+       - once the user is created with the primary group it can be added to the other groups.
+       - generally stored in /etc/group file
+
+
+
+
+
+
+Basic commands:
+    whoami : To display the username of the current use.
+
+    adduser: add a user to the system.
+
+    userdel: delete a user account and related files.
+
+    addgroup: add a group to the system.
+
+    delgroup: remove a group from the system.
+
+    usermod: modify a user account.
+
+    chage: change user password expiry information.
+
+    sudo: run one or more commands as another user (typically with superuser permissions).
+
+    Relevant files: /etc/passwd (user information), /etc/shadow (encrypted passwords), /etc/group (group information) and /etc/sudoers (configuration for sudo).
+
+    cat /etc/passwd : To check addition of the user
+     
+    passwd  : To assign the password to user  
+    
+    id : To get data about user and its group 
+
