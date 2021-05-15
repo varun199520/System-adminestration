@@ -1,0 +1,35 @@
+LVM:-
+Logical Volume Management (LVM) creates a layer of abstraction over physical storage, allowing you to create logical storage volumes. With LVM in place, you are not bothered with physical disk sizes because the hardware storage is hidden from the software so it can be resized and moved without stopping applications or unmounting file systems. You can think of LVM as dynamic partitions.
+For example, if you are running out of disk space on your server, you can just add another disk and extend the logical volume on the fly.
+
+
+Advantages of LVM:-
+    1. Resize storage pools: You can extend the logical space as well as reduce it without reformatting the disks.
+    2. Flexible storage capacity: You can add more space by adding more disks and adding them to the pool of physical storage, thus you have a flexible storage capacity.
+    3. Use of striped, mirrored and snapshot volumes: Striped logical volume that stripes data across two or more disks can dramatically increase throughput. Mirrored Logical volumes provide a convenient way to configure a mirror for your data. And you can take device snapshots for backups or to test the effect of changes without affecting the real data.
+    
+    
+    
+    LVM have 3 concepts:-
+
+    1. Physical Volume (PV): it is a whole disk or a partition of a disk.
+    
+    2. Volume Group (VG): corresponds to one or more PV.
+    
+    3. Logical Volume (LV): represents a portion of a VG. A LV can only belong to one VG. It’s on a LV that we can create a file system.
+    
+    
+    Basic commands:-
+    1) pvcreate -- to create a physical volume.
+
+    2) pvdisplay -- to display the physical volume.
+
+    3) lvcreate -n name -L[size] name -- to create a logical volume.
+
+    4) lvdisplay -- to display the logical volume.
+
+    5) vgcreate vgname[pv] -- to create a volume group.
+
+    6) vgdisplay -- to display the volume group.
+
+

@@ -1,0 +1,23 @@
+LINUX PARTITION:-
+The process of dividing a disk into logical areas that can be worked with separately is called partitioning. Disk partitioning is done to subdivide the disk into pieces with broadly different purposes. There are several reasons why you want to use partitioning: multiple operating systems on the same disk.
+Partitioning allows the use of different filesystems to be installed for different kinds of files. Separating user data from system data can prevent the system partition from becoming full and rendering the system unusable. Partitioning can also make backing up easier.
+
+Creating and deleting partitions in Linux is a regular practice because storage devices (such as hard drives and USB drives) must be structured in some way before they can be used. In most cases, large storage devices are divided into separate sections called partitions. Partitioning also allows you to divide your hard drive into isolated sections, where each section behaves as its own hard drive. Partitioning is particularly useful if you run multiple operating systems.
+
+
+
+Working of linux partition:-
+
+Linux does not assign letters to each drive and partition like Windows and DOS do. Instead, you must specify a mount point for each drive and partition. Linux works on a hierarchical directory tree, where root ( / ) is the primary mount point, which by default contains all others.
+
+Steps to create a partition
+1. List partitions
+2. Label a partition
+3. Use mkpart to make a partition
+4. Let the partition be created/settled
+5. Attach the file system to the partition
+6. Create a mount point directory
+7. Add entry in fstab
+8. Systemctl daemon-reload
+9. Mount the partition on the directory
+10. Reboot
